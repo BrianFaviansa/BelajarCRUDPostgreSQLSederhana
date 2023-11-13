@@ -33,7 +33,7 @@ namespace BelajarCRUDPostgreSQLSederhana
 
         public void tampilkanData()
         {
-            dataGridView1.DataSource = koneksi.showData("SELECT * FROM data_mahasiswa ORDER BY nim") ;
+            dataGridView1.DataSource = koneksi.showData("SELECT * FROM data_mahasiswa ORDER BY nim,prodi") ;
 
             dataGridView1.Columns[0].HeaderText = "NIM";
             dataGridView1.Columns[1].HeaderText = "Nama Mahasiswa";
