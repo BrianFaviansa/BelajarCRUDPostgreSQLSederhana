@@ -36,8 +36,8 @@ namespace BelajarCRUDPostgreSQLSederhana.Controller
             DataSet dataset = new DataSet();
 
             adapter.Fill(dataset);
-            object sumber = dataset.Tables[0];
-            return sumber;
+            object entity = dataset.Tables[0];
+            return entity;
         }
     }
 }
